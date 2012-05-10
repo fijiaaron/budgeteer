@@ -1,0 +1,12 @@
+Sencha Architect eval:
+
+Can't easily change element names (e.g. MyTextArea)
+Can't edit in code view?
+
+Can't set things like center, font size?
+
+Repositions screen (on dual screen) when sav project settings
+
+Crashed when converting from Tab to Panel
+
+Can't add items to tab panel?

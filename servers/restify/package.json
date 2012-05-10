@@ -1,0 +1,14 @@
+{
+	"name" : "budgeteer-restify",
+	"description" : "budgeteer webservice implemented with node & restify",
+	"version" : "0.0.1",
+
+	"dependencies" : {
+		"restify" : ""
+	}, 
+
+	"devDependencies": {
+		"mocha" : "0.12.1",
+		"should" : "0.3.2"
+	}
+}

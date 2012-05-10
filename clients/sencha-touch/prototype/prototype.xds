@@ -1,0 +1,39 @@
+{
+    "name": "prototype",
+    "settings": {
+        "urlPrefix": "app",
+        "directAPI": "",
+        "spacesToIndent": "tab",
+        "codeGenFormat": "Class",
+        "exportPath": "C:/etc/httpd/htdocs/budgeteer",
+        "extPath": "http://extjs.cachefly.net/touch/sencha-touch-2.0.0/",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "lineEnding": "LF",
+        "instantiateStore": true,
+        "genTimestamps": false,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": "412",
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "c4085fd3-b896-497d-802d-f248c151f030": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true
+    }
+}
