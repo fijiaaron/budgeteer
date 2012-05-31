@@ -25,13 +25,14 @@ app.configure('production', function() {
 
 budgeteer_api_v1_docs = "Budgteer API v1";
 
-app.get('/api/v1', function(request, response) {
-	response.send(budgeteer_api_v1_docs);
-});
+// app.get('/api/v1', function(request, response) {
+// 	response.send(budgeteer_api_v1_docs);
+// });
 
 /**
  * Load modules to handle web service requests
  */
+var budgeteer_handler = require('./modules/budgeteer');
 var account_handler = require('./modules/accounts');
 var budget_module = require('./modules/budgets');
 var expense_module = require('./modules/expenses');
@@ -39,7 +40,7 @@ var expense_module = require('./modules/expenses');
 /** 
  * Define API routes 
  */
-
+var budgeteer = app.resource('', budgeteer_handler);
 var accounts = app.resource('accounts', account_handler, { format: 'json' });
 
 

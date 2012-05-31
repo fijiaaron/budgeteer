@@ -1,22 +1,35 @@
 /**
- * Account
+ * Accounts
  *
  */
 var util = require('util');
+var Account = require('./model/account');
 
-exports.index = {
-	json: function(request, response) {
-		var account = {
-				id: 0, 
-				name: "Account 0"
-		};
-
-		response.send(JSON.stringify(account));
+var accounts = [
+	{
+		id: 0, 
+		name: "Account Zero"
+	},
+	{
+		id: 1, 
+		name: "Account One"
+	},
+	{
+		id: 2, 
+		name: "Account Two"
 	}
+];	
+
+exports.index = function (request, response) 	{
+	response.send("Accounts!");
+
+	// json: function(request, response) {
+	// 	response.send(JSON.stringify(account));
+	// }
 };
 
 exports.show = function(request, response) {
-	response.send('accounts#show ' + util.inspect(request.account));
+	response.send(JSON.stringify(request.account));
 };
 
 exports.new = function(request, response) {
@@ -42,6 +55,8 @@ exports.destroy =  function(request, response) {
 
 exports.load = function(id, callback) {
 	var account = new Account(id);
+//	callback(null, {id: id, name: "Product # " + id});
+
 
 	callback(null, account);
 }
